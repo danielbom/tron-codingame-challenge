@@ -59,3 +59,7 @@ export const distance = (A, B) => {
 export const isOutBoard = node => {
   return node[0] < 0 || node[1] < 0 || node[0] >= width || node[1] >= height;
 };
+
+export const lastElement = array => {
+  if (array.length > 0) return array[array.length - 1];
+}
